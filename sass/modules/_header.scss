@@ -33,4 +33,77 @@
 		margin-bottom: 0px;
 		margin-top: -10px;
 
+    }
+    #MainNav
+	{
+        margin: auto;
+        
+         input[type=text]
+	    {
+		max-width: 40%;
+        }
+        
+        li
+	    {
+		border-bottom: none;
+		display: inline;
+		margin-left: 20px;
+        }
+        
+        li a
+        {
+		display: inline;
+		padding: 5px 0 5px 0;
+		color: #1b2a49;
+		font-size: 20px;
+		margin-left: 20px;
+        }
+        li a:hover
+	    {
+		color: #1b2a49;
+
+		padding: 5px;
+		border-bottom: 1px solid red;
+		border-radius: 5px;
+		font-weight: bold;
+
+        }
+        ul li:first-child
+	    {
+		border-bottom: none;
+	    }
+
 	}
+
+	#search
+	{
+		order: -1;
+		margin-top: 0;
+		margin-bottom: 45px;
+	}
+
+	.logo
+	{
+		order: -1;
+		flex: 1 1 200px;
+		margin-left: 10px;
+	}
+ 
+
+	#searchForm
+	{
+		justify-content: flex-end;
+	}
+	#MainImage
+	{
+		background-image: url(../images/mainImagePc.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 500px;
+		width: 100%;
+		padding-top: 70px;
+		margin-bottom: 0px;
+		margin-top: -10px;
+
+    }
+ 
