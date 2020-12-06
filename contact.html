@@ -12,27 +12,36 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
-    <h1 class="hidden">Home Page</h1>
-    <div class="siteContainer">
-        <header id="header">
-            <nav id="MainNav">
-                <h2 class="hidden">main Nav</h2>
-                <button id="button"></button>
-                <div id="navlinks">
-                    <ul id="Menu">
-                        <li><a href="portfolio.html">My Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+    <header>
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1></h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </div>
-            </nav>
+            </div>
+        </div>
+    </section>
             <div class="logo">
                 <img src="images/mylogo.svg" alt="logo" id="Logo">
             </div>
-        </header>
+ </header>
         <main>
             <h2>Connect with me today</h2>
             <p>Whether you have a question about features, trials packs,
@@ -41,64 +50,66 @@
                 <section id="contactForm" class="form-popup">
                     <h2 class="hidden">Contact Form</h2>
                     <h2><u>Contact Us</u></h2>
-                    <form action="/action_page.php" class="form">
-                        <label for="fname">First Name</label><br>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
-
-                        <label for="lname">Last Name</label><br>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name"><br>
-
-                        <label for="e-mail">E-mail address</label><br>
-                        <input type="text" id="e-mail" name="E-mail" placeholder="your email"><br>
-
-                        <label for="message">Message</label><br>
-                        <textarea name="message" id="message" placeholder="Write your message here....."></textarea><br>
-
-                        <input type="submit" value="Submit" id="submit">
+                    <form action="./includes/mail/send.php" method="POST" class="form">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+                    
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                    
+                        <label for="service Area">Choose Department</label>
+                        <select id="service Area" name="department" required>
+                            <option value="">Select an option</option>
+                            <option value="design">design</option>
+                            <option value="coding">coding</option>
+                            <option value="technical support">Technical Support</option>
+                            <option value="Website Development">Website Development</option>
+                        </select>
+                    
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    
+                        <div class="g-recaptcha" data-sitekey="6Lcc9fAZAAAAABPexAtmYWGTAIBNRAJNxRxw2Lb2"></div>
+                        <span id="captcha_error"></span>
+                    
+                        <div class="submit-wrapper">
+                            <span class="submit">Submit</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    
                     </form>
 
                 </section>
-                <section id="contactInfo">
-                    <h2 class="hidden">contact info</h2>
-                    <section id="locationDetails">
-                        <img src="images/location.png" alt="contact image">
-                        <h2 class="hidden">Address </h2>
-                        <p>Band-Aid Company<br>
-                            1245,Downtown London<br>
-                            London, Ontario<br>
-                            N6G 2l9</p>
-                    </section>
-
-                    <section id="emailInfo">
-
-                        <img src="images/contact_us.png" alt="mail">
-                        <h2 class="hidden">Email address</h2>
-                        <a href="#">www.band-AidBeer.com</a>
-                        <h3>Call us at - 788-555-0001</h3>
-                    </section>
-                </section>
-
             </div>
 
         </main>
-        <footer class="footer">
-            <nav class="footerNav">
-                <h2 class="hidden">footer Nav</h2>
-                <h2>Let me design your website</h2>
+        <section id="footer">
+            <div class="footer container">
+                <div class="brand">
+                    <h1>Jaskaran<span>   </span><span></span>Singh</h1>
                 </div>
-                <div class="footNav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-
-                    </ul>
+                <h2>Let me design your future website</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+                    </div>
                 </div>
-            </nav>
-        </footer>
+                <p>Copyright © 2020. All rights reserved</p>
+            </div>
+        </section>
 
     </div>
     <script src="js/main.js"></script>
+    <script src="js/contact.js" type="module"></script>
 </body>
 
 </html>
