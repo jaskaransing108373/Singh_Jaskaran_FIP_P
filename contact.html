@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Abril+Fatface|Bree+Serif|Comfortaa|Gupter|Parisienne|Russo+One&display=swap" rel="stylesheet" type="text/css" media="screen">-->
+    <!--<script src="https://kit.fontawesome.com/2069507a56.js" crossorigin="anonymous"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <header>
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1></h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+            <div class="logo">
+                <img src="images/mylogo.svg" alt="logo" id="Logo">
+            </div>
+    <div id="MainImage">
+        <section class="welcomeText">
+           
+        </section>
+    
+    </div>
+ </header>
+        <main>
+            <h2>Connect with me today</h2>
+            <p>Whether you have a question about features, trials packs,
+                pricing, or anything else, our team is ready to answer all your questions</p>
+            <div id="contentCon">
+                <section id="contactForm" class="form-popup">
+                    <h2 class="hidden">Contact Form</h2>
+                    <h2><u>Contact Us</u></h2>
+                    <form action="./includes/mail/send.php" method="POST" class="form">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+                    
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                    
+                        <label for="service Area">Choose Department</label>
+                        <select id="service Area" name="department" required>
+                            <option value="">Select an option</option>
+                            <option value="design">design</option>
+                            <option value="coding">coding</option>
+                            <option value="technical support">Technical Support</option>
+                            <option value="Website Development">Website Development</option>
+                        </select>
+                    
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    
+                        <div class="g-recaptcha" data-sitekey="6Lcc9fAZAAAAABPexAtmYWGTAIBNRAJNxRxw2Lb2"></div>
+                        <span id="captcha_error"></span>
+                    
+                        <div class="submit-wrapper">
+                            <span class="submit">Submit</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    
+                    </form>
+
+                </section>
+            </div>
+
+        </main>
+        <section id="footer">
+            <div class="footer container">
+                <div class="brand">
+                    <h1>Jaskaran<span>   </span><span></span>Singh</h1>
+                </div>
+                <h2>Let me design your future website</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+                    </div>
+                </div>
+                <p>Copyright © 2020. All rights reserved</p>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js" type="module"></script>
+</body>
+
+</html>
