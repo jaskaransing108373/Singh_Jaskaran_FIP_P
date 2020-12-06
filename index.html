@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Abril+Fatface|Bree+Serif|Comfortaa|Gupter|Parisienne|Russo+One&display=swap" rel="stylesheet" type="text/css" media="screen">-->
+    <!--<script src="https://kit.fontawesome.com/2069507a56.js" crossorigin="anonymous"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    
+    <header>
+        <section id="header">
+            <div class="header container">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#hero">
+                            <h1></h1>
+                        </a>
+                    </div>
+                    <div class="nav-list">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Portfolio</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="logo">
+            <img src="images/mylogo.svg" alt="logo" id="Logo">
+        </div>
+    
+        </div>
+    </header>
+    
+        <section id="videoMain">
+            <h2>Demo reel</h2>
+            <div class="MainVideo"><video src="video/demo_reel.mp4" controls></video>
+            </div>
+        </section>
+    <main id="main">
+        
+        <section class="Car_Panel">
+            <h1>My Projects</h2>
+            <div class="carshowcase">
+            <car-card @showmydata="MiniSelected" v-for="mini in variants"
+             :mini="mini" :key="mini.id">
+            </car-card>
+            </div>
+            <div class="info" :class="{'show-data' : showBioData}">
+                <h1>{{ currentProfData.name }}</h1>
+                <img :src="'images/' + currentProfData.image" alt="">
+                <p>{{ currentProfData.description }}</p>
+                
+            </div>
+        </section>
+    </main>
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1>Jaskaran<span> </span><span></span>Singh</h1>
+            </div>
+            <h2>Let me design your future website</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+                </div>
+            </div>
+            <p>Copyright © 2020. All rights reserved</p>
+        </div>
+    </section>
+
+    <script type="module" src="js/about.js"></script>
+</body>
+</html>
