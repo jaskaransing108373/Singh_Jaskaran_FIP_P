@@ -1,7 +1,13 @@
-footer {
-   
-    bottom: 0;
-    background-color: black;
 
-    color: white;
+.footNav {
+
+	text-align: center;
+	font-family: monospace;
+}
+.footNav a  {
+	display: block;
+	margin-right: 30px;
+	letter-spacing: 1.0px;
+	color: #c48c26;
+	text-align: center;
 }
