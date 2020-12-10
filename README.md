@@ -3,6 +3,7 @@
 # My Awesome Portfolio
 This website is created for the purpose of showing the different talents of mine in web designing and development. link to open my website is Jaskaransingh.co.in
 
+[portfolio App Roadmap](https://docs.google.com/document/d/1XGXUgzyZemKIpeqh57Ds3qBTKXPMrXmtUwATLkAeJTg/edit?usp=sharing)
 ## Getting started
 These instructions will get you the copy of project and will also guide you about how to develop and test it. See Deployment for notes on how to deploy the project on your Mac/Pc.
 
