@@ -51,16 +51,16 @@ $department = '';
     
 	//  3rd condition, here we are redirecting mails to different departments using if and else functions. 
  if($department == "design") {
-        $email_recipient = "design@jaskaran.com";
+        $email_recipient = "jaskaran_walia25@yahoo.in";
     }
     else if($department == "coding") {
-        $email_recipient = "coding@jaskaran.com";
+        $email_recipient = "jaskaran_walia25@yahoo.in";
     }
     else if($department == "technical support") {
-        $email_recipient = "tech.support@jaskaran.com";
+        $email_recipient = "jaskaran_walia25@yahoo.in";
     }
     else if($department == "Website Development") {
-        $email_recipient = "web@jaskaran.com";
+        $email_recipient = "jaskaran_walia25@yahoo.in";
     }
     else {
         $email_recipient = "jaskaran_walia25@yahoo.in";

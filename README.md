@@ -1,7 +1,7 @@
 
 ![dashboard !](images/mylogo.svg "the shelf")
 # My Awesome Portfolio
-This website is created for the purpose of showing the different talents of mine in web designing and development.
+This website is created for the purpose of showing the different talents of mine in web designing and development. link to open my website is Jaskaransingh.co.in
 
 ## Getting started
 These instructions will get you the copy of project and will also guide you about how to develop and test it. See Deployment for notes on how to deploy the project on your Mac/Pc.
