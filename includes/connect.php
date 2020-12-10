@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost',
-        'dbname' => 'cooper_jas',
+        'dbname' => 'jaskaran9669',
         'charset' => 'utf8'
     );
 
@@ -9,8 +9,8 @@
 
     //This is the DB credentials
 
-    $db_user = 'root';
-    $db_pass = ''; // windows users leave this blank
+    $db_user = 'jaskaran9669';
+    $db_pass = 'OrangeCat1'; // windows users leave this blank
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);
